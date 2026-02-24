@@ -12,5 +12,3 @@ for article in articles:
     st.write(f"Published at: {article['publishedAt']}")
     st.write(f"Source: {article['source']['name']}")
 
-with open('news_data.json', mode='w', encoding='utf-8') as newsfile:
-    json.dump(data_news, newsfile, indent=4)
