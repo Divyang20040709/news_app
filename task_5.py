@@ -11,6 +11,7 @@ for article in articles:
     st.write(article['description'])
     st.write(f"Published at: {article['publishedAt']}")
     st.write(f"Source: {article['source']['name']}")
+    st.link_button(f"Source: Read Full Article", article['url'])
     img_url = article.get('urlToImage')
     if img_url:
         st.image(img_url)
@@ -23,6 +24,7 @@ for article in articles:
     st.write(article['description'])
     st.write(f"Published at: {article['publishedAt']}")
     st.write(f"Source: {article['source']['name']}")
+    st.link_button(f"Source: Read Full Article", article['url'])
     img_url = article.get('urlToImage')
     if img_url:
         st.image(img_url)
@@ -36,6 +38,7 @@ for article in articles:
     st.write(article['description'])
     st.write(f"Published at: {article['publishedAt']}")
     st.write(f"Source: {article['source']['name']}")
+    st.link_button(f"Source: Read Full Article", article['url'])
     img_url = article.get('urlToImage')
     if img_url:
         st.image(img_url)
